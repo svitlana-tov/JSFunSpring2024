@@ -1,5 +1,7 @@
 # Installation Guide - Mac
 
+If you are viewing this in Visual Studio Code, press `command + shift + v` to open this in preview mode.
+
 ## What You Will Be Installing
 
 1. Microsoft Teams
@@ -10,7 +12,7 @@
 6. Visual Studio Code (Recommended) and Extensions
 7. Chrome or Firefox (Recommended)
 
-We are going to install software over the command line, so before starting, open your terminal window. (You can open it by pressing `command+space` and searching for _terminal_).
+We are going to install software over the command line, so before starting, open your terminal window. (You can open it by pressing `command + space` and searching for _terminal_).
 
 ## Microsoft Teams
 
@@ -66,7 +68,7 @@ If you already have git installed, its a good idea to update it. If you installe
 
 Node.js is a JavaScript runtime engine. It allows you to run JavaScript programs outside of Chrome, Safari, Edge or another web browser.
 
-You will need to have the latest LTS version of Node installed as of October 2023 (18.x). If you already have Node.js installed, type `node -v` in your terminal. If you do not have the latest version, you can do one of the following to things:
+You will need to have the latest LTS version of Node installed as of February 2024 (20.x). If you already have Node.js installed, type `node -v` in your terminal. If you do not have the latest version, you can do one of the following to things:
 
 1. [Upgrade Node.js with whatever you originally installed Node.js with.](https://flaviocopes.com/how-to-update-node/) If you have Node.js projects on your computer and you wish to maintain them, this could break your existing projects.
 2. Install multiple version of Node.js on your computer with NVM. See the _Node Version Manager (NVM)_ section of the [Linux Installation Guide](InstallationGuideLinuxAndNVM.md#node-version-manager-nvm).
@@ -74,12 +76,14 @@ You will need to have the latest LTS version of Node installed as of October 202
 If you do not have Node.js installed, type this is your terminal:
 
 ```bash
-brew install node@18
+brew install node@20
 ```
 
 When it’s finished, type `node -v` to confirm that it is now installed.
 
-You should also update NPM. You can update it with:
+### NPM
+
+Update NPM with:
 
 ```bash
 npm install -g npm@latest
@@ -113,13 +117,13 @@ If you see this security warning at any time during our class, click on _Open_.
 
 ### Adding Visual Studio Code to Your Path Variable
 
-You should configure your computer so that you can open Visual Studio Code via the terminal. Press `command+shift+p`, search for _shell command_ and click on _Shell Command: Install 'code' command in PATH_.
+You should configure your computer so that you can open Visual Studio Code via the terminal. Press `command + shift + p`, search for _shell command_ and click on _Shell Command: Install 'code' command in PATH_.
 
 ![](install-screens/vscode-mac-path.png)
 
 ### Configuring Git to Open in Visual Studio Code
 
-You should have a terminal open in the bottom panel of the screen like this. (If you do not, press `control+ ~` to open it).
+You should have a terminal open in the bottom panel of the screen like this. (If you do not, go to "View" > "Terminal" in the main menu).
 
 ![Mac Terminal](install-screens/terminal-mac.png)
 
@@ -142,7 +146,7 @@ Once its installed, the _Install_ button may have transformed into a _Reload_ bu
 
 ### Bracket Colorization Setting
 
-Bracket Colorization is a simple setting that makes it much easier to debug issues with closes curly braces, brackets, and parentheses. To enable, press `command+shift+p`. Search for _settings_ and click on _Open Settings (UI)_.
+Bracket Colorization is a simple setting that makes it much easier to debug issues with closes curly braces, brackets, and parentheses. To enable, press `command + shift + p`. Search for _settings_ and click on _Open Settings (UI)_.
 
 ![](install-screens/settings-search.png)
 
@@ -164,7 +168,7 @@ Prettier automatically formats your code and you can configure it to format your
 
 If you would like to use prettier, search for _Prettier_ in the Extensions tab on the left and install _Prettier - Code formatter_. Once its installed, click on _Reload_ if necessary.
 
-You can now adjust Visual Studio's settings so that it will format on save and will play nicely with Prettier's defaults. Press `command+shift+p,` search for _settings_ and click on _Preferences: Open Settings (JSON)_.
+You can now adjust Visual Studio's settings so that it will format on save and will play nicely with Prettier's defaults. Press `command + shift + p,` search for _settings_ and click on _Preferences: Open Settings (JSON)_.
 
 ![](install-screens/settings-search.png)
 

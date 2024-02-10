@@ -1,5 +1,7 @@
 # Installation Guide - Windows
 
+If you are viewing this in Visual Studio Code, press `ctrl + shift + v` to open this in preview mode.
+
 ## What You Will Be Installing
 
 1. Microsoft Teams
@@ -62,19 +64,21 @@ When you finish installing, you should see Git Bash on your computer. Open it, t
 
 Node.js is a JavaScript runtime engine. It allows you to run JavaScript programs outside of Chrome, Safari, Edge or another web browser.
 
-You will need to have the latest LTS version of Node installed as of October 2023 (18.x). If you already have Node.js installed, type `node -v` in Git Bash. If you do not have the latest version, you will need to remove Node.js and reinstall it again.
+You will need to have the latest LTS version of Node installed as of February 2024 (20.x). If you already have Node.js installed, type `node -v` in Git Bash. If you do not have the latest version, you will need to reinstall it again.
 
-If Node.js is up-to-date, you should update NPM. You can update it with:
-
-```bash
-npm install -g npm@latest
-```
-
-To install Node.js, go to https://nodejs.org/en/ and click on the _18.x.x LTS_ version.
+To install or resinstall Node.js, go to https://nodejs.org/en/ and click on the _20.x.x LTS_ version.
 
 When it finishes downloading, open the downloaded file. Accept the License Agreement and all of the defaults. If you are asked to allow the app to make changes to your device, click on _Yes_.
 
 When it’s finished installing, open Git Bash and type `node -v` to confirm that it has installed. If you had Git Bash open before installing Node.js and you get an error, try reopening Git Bash and see if this resolves the issue.
+
+### NPM
+
+Update NPM with:
+
+```bash
+npm install -g npm@latest
+```
 
 ### ESLint
 
@@ -92,11 +96,16 @@ When it’s finished, type `eslint -v` in Git Bash to confirm it has installed.
 
 ### Setting Git Bash as your Default Shell
 
-In Visual Studio Code, press `ctrl+shift+p`, search for _terminal_ and select _Terminal: Select Default Profile_. Then choose _Git Bash_.
+In Visual Studio Code, press `ctrl + shift + p`, search for _terminal_ and select _Terminal: Select Default Profile_. Then choose _Git Bash_.
 
 ![](install-screens/vscode-windows-shell.png)
 
-Press `` ctrl+` ``. If Git Bash opens inside of Visual Studio Code, then it worked.
+Reopen your terminal window:
+
+- In your main menu, go to "View" > "Terminal". This should close the terminal.
+- Repeat. This should open the terminal window.
+
+If Git Bash opens inside of Visual Studio Code, then it worked.
 
 ![](install-screens/vscode-git-bash.png)
 
@@ -110,7 +119,7 @@ Once its installed, the _Install_ button may have transformed into a _Reload_ bu
 
 ### Bracket Colorization Setting
 
-Bracket Colorization is a simple setting that makes it much easier to debug issues with closes curly braces, brackets, and parentheses. To enable, press `ctrl+shift+p`. Search for _settings_ and click on _Open Settings (UI)_.
+Bracket Colorization is a simple setting that makes it much easier to debug issues with closes curly braces, brackets, and parentheses. To enable, press `ctrl + shift + p`. Search for _settings_ and click on _Open Settings (UI)_.
 
 ![](install-screens/settings-search.png)
 
@@ -136,7 +145,7 @@ Prettier automatically formats your code and you can configure it to format your
 
 If you would like to use prettier, search for _Prettier_ in the Extensions tab on the left and install _Prettier - Code formatter_. Once its installed, click on _Reload_ if necessary.
 
-You can now adjust Visual Studio's settings so that it will format on save and will play nicely with Prettier's defaults. Press `ctrl+shift+p,` search for _settings_ and click on _Preferences: Open Settings (JSON))_.
+You can now adjust Visual Studio's settings so that it will format on save and will play nicely with Prettier's defaults. Press `ctrl + shift + p,` search for _settings_ and click on _Preferences: Open Settings (JSON))_.
 
 ![](install-screens/settings-search.png)
 
