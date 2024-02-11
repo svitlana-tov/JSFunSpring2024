@@ -1,0 +1,20 @@
+{
+  "name": "jsfunspring2024",
+  "version": "1.0.0",
+  "author": "CanCode Communities",
+  "description": "CanCode Communities' JavaScript Fundamentals Class",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "testAll": "mocha tests/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbanyCanCodeCourses/JSFunSpring2024#readme"
+  },
+  "dependencies": {
+    "chai": "^5.0.3",
+    "mocha": "^10.3.0",
+    "sinon": "^17.0.1"
+  }
+}
