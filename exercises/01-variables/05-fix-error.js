@@ -3,9 +3,9 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-
+let numberOfLikes = 57;
 // This is throwing an error. Do you know why?
-const numberOfLikes = 57; // Change me
+// Change me
 
 // DO NOT CHANGE THE CODE BELOW
 

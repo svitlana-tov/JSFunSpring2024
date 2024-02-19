@@ -6,3 +6,5 @@ const ONE_HUNDRED = 100;
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const percentage = (21 / 3) * ONE_HUNDRED;
+console.log(percentage);
