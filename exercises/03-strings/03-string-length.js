@@ -1,4 +1,4 @@
-const str = "bananas"; // e.g.
+const str = "chocolate"; // e.g.
 
 /**
  * Create a new constant called "strLength". It should be evaluate to the number of characters within the value of "str".
@@ -9,3 +9,5 @@ const str = "bananas"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const strLength = str.length;
+console.log(strLength);
