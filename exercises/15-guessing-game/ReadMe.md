@@ -6,19 +6,15 @@ Create a simple command-line "Guess the Number" game where the computer selects 
 
 **Setup Steps**:
 
-1. Initialize Your Project
-   Create a GitHub repository named guess-the-number.
-   Clone the repository to your machine.
-   Open the project directory in your terminal
-
-2. Prepare your Environment
+1. Prepare your Environment
 
 ```bash
+cd exercises/15-guessing-game
 npm init -y
 npm install readline-sync
 ```
 
-3. Create Project Files
+2. Create Project Files
    Create an `index.js` This will be where you write the game logic.
 
 ## Game Development Instructions
