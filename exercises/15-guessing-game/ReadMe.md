@@ -1,4 +1,4 @@
-# "Guess the Number" Game Project Instructions
+# Guess the Number Game Project Instructions
 
 **OBJECTIVE**:
 
@@ -36,7 +36,29 @@ Math.random()
    Validate the player's input to ensure it's a number within the expected range. Prompt for re-entry if invalid.
 
 5. Game Over Condition
-   End the game once the player guesses correctly. Optionally, offer a replay option.
+   End the game once the player guesses correctly.
+
+## Playing the Game
+
+In Visual Studio Code, open your terminal. To start the game, run `node .` To end the game, press `ctrl + c`.
+
+You will display messages to the user with `console.log`. For example:
+
+```javascript
+console.log("\nWelcome to the Guessing Game!\nPress ctrl+c to stop\n");
+```
+
+The new line character (`\n`) is like pressing "enter" in text editors like Microsoft Word or Visual Studio Code. Use this to make your text output easier to read.
+
+The player will guess a number over the command line. The player will type a number and hit `enter`. To get input from the player with the _readline-sync_ library, you will do something like this:
+
+```javascript
+const number = prompt.question("Please guess a number between 1 through 10: ");
+```
+
+[You can read the full _readline-sync_ documentation here](https://www.npmjs.com/package/readline-sync).
+
+## Project Requirements
 
 Additional Tips
 Use pseudocode to outline the game flow before coding.
