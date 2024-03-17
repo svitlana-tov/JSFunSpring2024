@@ -36,7 +36,7 @@ Math.random()
    Validate the player's input to ensure it's a number within the expected range. Prompt for re-entry if invalid.
 
 5. Game Over Condition
-   End the game once the player guesses correctly or exhausts their attempts. Optionally, offer a replay option.
+   End the game once the player guesses correctly. Optionally, offer a replay option.
 
 Additional Tips
 Use pseudocode to outline the game flow before coding.
