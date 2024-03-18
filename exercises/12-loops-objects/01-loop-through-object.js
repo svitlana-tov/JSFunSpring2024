@@ -17,12 +17,8 @@ const links = {
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-let html = "<ul>";
-for (let [key, linksValue] of Object.entries(links)) {
-  html += `
-  
-      <li><a href="${linksValue}">${key}</a></li>
-    `;
-  html += "</ul>";
+let html = " ";
+for (let link in links) {
+  html += ` <a href = "${links[link]}">${link}</a>`;
 }
 console.log(html);
