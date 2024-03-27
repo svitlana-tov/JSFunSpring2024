@@ -1,11 +1,13 @@
 import prompt from "readline-sync";
 
 const startGame = () => {
+  // Generate a random number between 1 and 10
   const secretNumber = Math.floor(Math.random() * 10) + 1;
   const maxGuesses = 5;
   let guessesTaken;
 
-  guessesTaken = 0;
+  guessesTaken = 0; // Initialize the number of guesses taken
+
   while (guessesTaken < maxGuesses) {
     const guess = prompt.question("Guess a number between 1 and 10: ");
     const guessNum = parseInt(guess);
@@ -28,13 +30,14 @@ const startGame = () => {
 };
 
 const playAgain = () => {
+  // Prompt the user if they want to play again
   const playAgainInput = prompt
     .question("Do you want to play again?: ")
     .toLowerCase();
-  return playAgainInput === "yes";
+  return playAgainInput === "yes"; // Return true if the user wants to play again
 };
 const main = () => {
-  let continuePlaying = true;
+  let continuePlaying = true; // Initialize the flag for continuing the game
   while (continuePlaying) {
     const gameWon = startGame();
     if (!gameWon) {
@@ -45,4 +48,4 @@ const main = () => {
   }
   console.log("Thanks for playing! Goodbye!");
 };
-main();
+main(); // Start the game

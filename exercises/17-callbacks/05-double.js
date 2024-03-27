@@ -26,10 +26,18 @@ const doubleNumber = (num) => {
 
 const doubleArray = (originalArray, doubleNumber) => {
   // WRITE YOUR ANSWER IN HERE
+  let result = [];
+  for (let i = 0; i < originalArray.length; i++) {
+    let num = originalArray[i];
+    let doubledNum = doubleNumber(num);
+
+    result.push(doubledNum);
+  }
+  return result;
 };
 
 // Uncomment me to test your answer in Quokka
-// doubleArray([1, 2, 3], doubleNumber);
+doubleArray([1, 2, 3], doubleNumber);
 
 // IGNORE THIS BELOW. It is for the tests.
 
