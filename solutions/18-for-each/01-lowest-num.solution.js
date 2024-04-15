@@ -10,10 +10,16 @@ const numbers = [1, 10, -2, 3, 4]; // e.g.
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-numbers.forEach((number) => {
-  if (number < lowestNumber) {
-    lowestNumber = number;
+// Solution 1
+const findLowestNumber = (num) => {
+  if (num < lowestNumber) {
+    lowestNumber = num;
   }
-});
+};
 
-console.log(lowestNumber);
+numbers.forEach(findLowestNumber);
+
+// Solution 2
+numbers.forEach((num) => {
+  if (num < lowestNumber) lowestNumber = num;
+});

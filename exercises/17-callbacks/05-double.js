@@ -33,7 +33,7 @@ const doubleArray = (originalArray, doubleNumber) => {
 
     result.push(doubledNum);
   }
-  return result;
+  return console.log(result);
 };
 
 // Uncomment me to test your answer in Quokka
