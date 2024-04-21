@@ -11,5 +11,27 @@
  * Do not change the HTML unless you are instructed to do so.
  */
 (function () {
-  // Put your answers in here
+  const li = document.querySelector("li");
+  console.log(li);
+
+  const myIdEl = document.querySelector("#myId");
+  console.log(myIdEl);
+
+  const warningLi = document.querySelectorAll(".bg-warning");
+  warningLi.forEach((item) => {
+    console.log(item);
+  });
+
+  const targetMeButton = document.querySelector("#targetMe");
+  console.log(targetMeButton);
+
+  const socialMedias = document.querySelectorAll("#socialMedia");
+  socialMedias.forEach((media) => {
+    console.log(media);
+  });
+
+  const targetedCell = document.querySelectorAll("div#myRow div.col");
+  targetedCell.forEach((cell) => {
+    console.log(cell);
+  });
 })();

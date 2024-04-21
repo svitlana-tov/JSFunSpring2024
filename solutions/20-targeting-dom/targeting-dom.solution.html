@@ -68,14 +68,12 @@
       <p class="text-muted">
         You will need to modify the HTML in this <code>&lt;section&gt;</code>.
       </p>
-      <p>
-        Target the button labeled "Target Me" only. You will need to modify the
-        HTML.
-      </p>
-      <!-- Change the HTML below so that you can target it -->
+      Target the button labeled "Target Me" only. You will need to modify the
+      HTML.
       <div class="mb-4">
         <button class="btn btn-secondary" type="button">Ignore Me</button>
-        <button id="targetMe" class="btn btn-secondary" type="button">
+        <!-- Adding an ID to the button so that I can target it with JavaScript. An ID is recommend when you need to target a single element on the page. -->
+        <button class="btn btn-secondary" type="button" id="targetButton">
           Target Me
         </button>
         <button class="btn btn-secondary" type="button">Ignore Me</button>
@@ -86,12 +84,12 @@
         site with a single <code>document.query____</code>. You will need to
         modify the HTML.
       </p>
-      <!-- Change the HTML below so that you can target it -->
+      <!-- Adding an class to the button so that I can target it with JavaScript. Classes or (even better), data attributes are recommend when you need to target a single element on the page. -->
       <div>
-        <a href="https://www.facebook.com" id="socialMedia">Facebook</a> |
+        <a class="target-link" href="https://www.facebook.com">Facebook</a> |
         <a href="https://www.google.com">Google Search Engine</a> |
-        <a href="https://www.twitter.com" id="socialMedia">Twitter</a> |
-        <a href="https://www.instagram.com" id="socialMedia">Instagram</a> |
+        <a class="target-link" href="https://www.twitter.com">Twitter</a> |
+        <a class="target-link" href="https://www.instagram.com">Instagram</a> |
         <a href="https://www.bing.com">Bing</a>
       </div>
     </section>

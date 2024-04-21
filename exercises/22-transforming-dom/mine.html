@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>My Button</button>
+    <script>
+      !(function () {
+        const button = document.querySelector("button");
+        //const myEventHandler = (event) => {
+        // button.style.backgroundColor = "blue";};
+        //button.addEventListener("click", myEventHandler);
+
+        button.addEventListener("click", (event) => {
+          button.style.backgroundColor = "blue";
+        });
+      })();
+    </script>
+  </body>
+</html>
