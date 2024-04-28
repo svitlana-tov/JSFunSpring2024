@@ -47,11 +47,19 @@
   const continueForm = document.querySelector("#continueForm");
   const formCheck = document.querySelector("#form-check");
   const textSuccess = document.querySelector(".text-success");
+  const textDanger = document.querySelector(".text-danger");
 
   continueForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    //const isChecked = event.target.value;
     if (formCheck.checked) {
       textSuccess.style.display = "block";
+      textDanger.style.display = "none";
+      formCheck.classList.remove("is-invalid");
+    } else {
+      textDanger.style.display = "block";
+      textSuccess.style.display = "none";
+      formCheck.classList.add("is-invalid");
     }
   });
 })();
