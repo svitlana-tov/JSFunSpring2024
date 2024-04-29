@@ -76,8 +76,9 @@
    */
 
   // Write you JavaScript here
-  const addMovie = document.querySelector("#addMovie");
-  addMovie.insertAdjacentHTML("beforeend", movieHtml);
+  const addMovie = document
+    .querySelector("#addMovie")
+    .insertAdjacentHTML("beforeend", movieHtml);
 
   /**
    * Problem 3: Create a ChatGPT conversation from an array of objects
