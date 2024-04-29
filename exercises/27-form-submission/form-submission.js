@@ -17,14 +17,17 @@
    * and you must prevent the page from refreshing when the form is submitted.
    */
   // Write your answer here
+
+  // Step 1: Target
   const form = document.querySelector("#form");
   const searchInput = document.querySelector("#searchInput");
   const searchResult = document.querySelector("#searchResult");
+  // Step 2: React to event
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const displaySearchInput = searchInput.value;
+    // Step 3: Do something - stop the form from refreshing and display "No results for ____ found".
 
-    searchResult.innerHTML = `No results for ${displaySearchInput}  found`;
+    searchResult.textContent = `No results for ${searchInput.value} found`;
   });
   /**
    * Problem 2: Agree to the terms and conditions
@@ -51,7 +54,7 @@
 
   continueForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    //const isChecked = event.target.value;
+
     if (formCheck.checked) {
       textSuccess.style.display = "block";
       textDanger.style.display = "none";
